@@ -1,0 +1,47 @@
+@model WebApp.ViewModels.BloodDonate.CreateViewModel;
+
+<h1>@Resources.Views.Shared._Layout.Create</h1>
+
+<h4>@Resources.DTO.App.V1.Overall.BloodDonate</h4>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BloodDonate.DonorId" class="control-label"></label>
+                <select asp-for="BloodDonate.DonorId" class="form-control" asp-items="Model.Patients">
+                    <option></option>
+                </select>
+                <span asp-validation-for="BloodDonate.DonorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodDonate.DoctorId" class="control-label"></label>
+                <select asp-for="BloodDonate.DoctorId" class="form-control" asp-items="Model.Doctors">
+                    <option></option>
+                </select>
+                <span asp-validation-for="BloodDonate.DoctorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodDonate.BloodTestId" class="control-label"></label>
+                <select asp-for="BloodDonate.BloodTestId" class="form-control" asp-items="Model.BloodTests">
+                    <option></option>
+                </select>
+                <span asp-validation-for="BloodDonate.BloodTestId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodDonate.Amount" class="control-label"></label>
+                <input asp-for="BloodDonate.Amount" class="form-control" />
+                <span asp-validation-for="BloodDonate.Amount" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="@Resources.Views.Shared._Layout.Create" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">@Resources.Views.Shared._Layout.BacktoList</a>
+</div>

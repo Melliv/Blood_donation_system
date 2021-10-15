@@ -1,0 +1,27 @@
+@model WebApp.ViewModels.Statistics.StatisticsViewModel;
+
+<div id="piechart" style="width: 800px; height: 500px;"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+        var jsonData = '@Html.Raw(@Model.Data)';
+        var data = new google.visualization.DataTable(jsonData);
+        
+        var options = {
+            title: 'Blood donate statistics',
+                titleTextStyle: {
+                    fontSize: 24,
+                },
+                    pieSliceText: 'label',
+                backgroundColor: '#f8f9fc',
+                pieHole: 0.4,
+        };
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+    }
+</script>
+

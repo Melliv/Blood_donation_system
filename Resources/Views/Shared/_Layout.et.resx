@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Languages" xml:space="preserve">
+        <value>Keele valik</value>
+    </data>
+    <data name="Logout" xml:space="preserve">
+        <value>Logi välja</value>
+    </data>
+    <data name="Hello" xml:space="preserve">
+        <value>Tere</value>
+    </data>
+    <data name="Create" xml:space="preserve">
+        <value>Sisesta</value>
+    </data>
+    <data name="Search" xml:space="preserve">
+        <value>Otsi</value>
+    </data>
+    <data name="Profile" xml:space="preserve">
+        <value>Profiil</value>
+    </data>
+    <data name="BloodDonating" xml:space="preserve">
+        <value>Vere annetus</value>
+    </data>
+    <data name="Activities" xml:space="preserve">
+        <value>Tegevused</value>
+    </data>
+    <data name="BloodBank" xml:space="preserve">
+        <value>Vere varud</value>
+    </data>
+    <data name="BloodCenter" xml:space="preserve">
+        <value>verekeskus</value>
+    </data>
+    <data name="BloodTesting" xml:space="preserve">
+        <value>Vere testimine</value>
+    </data>
+    <data name="BloodTransfusions" xml:space="preserve">
+        <value>Vere ülekanded</value>
+    </data>
+    <data name="Donations" xml:space="preserve">
+        <value>Annetused</value>
+    </data>
+    <data name="General" xml:space="preserve">
+        <value>Üldine</value>
+    </data>
+    <data name="Persons" xml:space="preserve">
+        <value>Isikud</value>
+    </data>
+    <data name="Register" xml:space="preserve">
+        <value>Registreeri</value>
+    </data>
+    <data name="Tests" xml:space="preserve">
+        <value>Testid</value>
+    </data>
+    <data name="BloodDonation" xml:space="preserve">
+        <value>Vere annetus</value>
+    </data>
+    <data name="BloodTransfusion" xml:space="preserve">
+        <value>Vere ülekanne</value>
+    </data>
+    <data name="BacktoList" xml:space="preserve">
+        <value>Tagasi nimekirja</value>
+    </data>
+    <data name="Privacy" xml:space="preserve">
+        <value>Privaatsus</value>
+    </data>
+    <data name="Details" xml:space="preserve">
+        <value>Detailid</value>
+    </data>
+    <data name="Delete" xml:space="preserve">
+        <value>Kustuta</value>
+    </data>
+    <data name="Edit" xml:space="preserve">
+        <value>Muuda</value>
+    </data>
+    <data name="New" xml:space="preserve">
+        <value>Uus</value>
+    </data>
+    <data name="Index" xml:space="preserve">
+        <value>Kogumik</value>
+    </data>
+    <data name="DeleteConfirm" xml:space="preserve">
+        <value>Oled sa kindel, et sa tahad seda kustutada</value>
+    </data>
+    <data name="Home" xml:space="preserve">
+        <value>Kodu</value>
+    </data>
+    <data name="Statistics" xml:space="preserve">
+        <value>Statistika</value>
+    </data>
+    <data name="BloodTests" xml:space="preserve">
+        <value>Vereanalüüsid</value>
+    </data>
+    <data name="BloodDonations" xml:space="preserve">
+        <value>Vere annetused</value>
+    </data>
+    <data name="Blood" xml:space="preserve">
+        <value>Veri</value>
+    </data>
+</root>

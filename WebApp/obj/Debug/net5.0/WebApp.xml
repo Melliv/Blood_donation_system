@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApp</name>
+    </assembly>
+    <members>
+        <member name="M:WebApp.ApiControllers.BloodDonateController.GetBloodDonate">
+            <summary>
+            Get all bloodDonates
+            </summary>
+            <returns>List of bloodDonates</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodDonateController.GetPersonBloodDonates(System.Guid)">
+            <summary>
+            Get all person bloodDonates by person id
+            </summary>
+            <param name="personId">Donor id</param>
+            <returns>List of person bloodDonates</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodDonateController.GetBloodDonate(System.Guid)">
+            <summary>
+            Get bloodDonate by id
+            </summary>
+            <param name="id">BloodDonate id</param>
+            <returns>BloodDonate</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodDonateController.PutBloodDonate(System.Guid,DTO.App.V1.BloodDonate)">
+            <summary>
+            Update specific bloodDonate
+            </summary>
+            <param name="id">BloodDonate id</param>
+            <param name="bloodDonate">New BloodDonate</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodDonateController.PostBloodDonate(DTO.App.V1.BloodDonate)">
+            <summary>
+            Insert new bloodDonate
+            </summary>
+            <param name="bloodDonate">New bloodDonate</param>
+            <returns>BloodDonate</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodDonateController.DeleteBloodDonate(System.Guid)">
+            <summary>
+            Delete bloodDonate by id
+            </summary>
+            <param name="id">BloodDonate id</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodGroupController.GetBloodGroup">
+            <summary>
+            Get all bloodGroups
+            </summary>
+            <returns>List of bloodGroups</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodGroupController.GetBloodGroup(System.Guid)">
+            <summary>
+            Get bloodGroup by id
+            </summary>
+            <param name="id">BloodGroup id</param>
+            <returns>BloodGroup</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodGroupController.PutBloodGroup(System.Guid,DTO.App.V1.BloodGroup)">
+            <summary>
+            Update specific bloodGroup
+            </summary>
+            <param name="id">BloodGroup id</param>
+            <param name="bloodGroup">New bloodGroup</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodGroupController.PostBloodGroup(DTO.App.V1.BloodGroup)">
+            <summary>
+            Insert new bloodGroup
+            </summary>
+            <param name="bloodGroup">New bloodGroup</param>
+            <returns>BloodGroup</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodGroupController.DeleteBloodGroup(System.Guid)">
+            <summary>
+            Delete bloodGroup by id
+            </summary>
+            <param name="id">BloodGroup id</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTestController.GetBloodTest">
+            <summary>
+            Get all bloodTests
+            </summary>
+            <returns>List of bloodTests</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTestController.GetPersonBloodTest(System.Guid)">
+            <summary>
+            Get all person bloodTests by person id
+            </summary>
+            <param name="personId">Patient id</param>
+            <returns>List of person bloodTests</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTestController.GetBloodTestMin">
+            <summary>
+            Get all bloodTests, but only with id and overviewData 
+            </summary>
+            <returns>List of bloodTests</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTestController.GetBloodTest(System.Guid)">
+            <summary>
+            Get specific bloodTest
+            </summary>
+            <param name="id">BloodTest id</param>
+            <returns>BloodTest</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTestController.PutBloodTest(System.Guid,DTO.App.V1.BloodTest)">
+            <summary>
+            Update specific bloodTest
+            </summary>
+            <param name="id"></param>
+            <param name="bloodTest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTestController.PostBloodTest(DTO.App.V1.BloodTest)">
+            <summary>
+            Insert new bloodTest
+            </summary>
+            <param name="bloodTest">New bloodTest</param>
+            <returns>BloodTest</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTestController.DeleteBloodTest(System.Guid)">
+            <summary>
+            Delete specific bloodTest
+            </summary>
+            <param name="id">BloodTest id</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTransfusionController.GetBloodTransfusion">
+            <summary>
+            Get all bloodTransfusions
+            </summary>
+            <returns>List of bloodTransfusions</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTransfusionController.GetPersonBloodTransfusion(System.Guid)">
+            <summary>
+            Get all person bloodTransfusions
+            </summary>
+            <param name="personId">Patient id</param>
+            <returns>List of bloodTransfusions</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTransfusionController.GetBloodTransfusion(System.Guid)">
+            <summary>
+            Get bloodTransfusion by id
+            </summary>
+            <param name="id">BloodTransfusion id</param>
+            <returns>BloodTransfusion</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTransfusionController.PutBloodTransfusion(System.Guid,DTO.App.V1.BloodTransfusion)">
+            <summary>
+            Update specific bloodTransfusion 
+            </summary>
+            <param name="id">BloodTransfusion id</param>
+            <param name="bloodTransfusion">New bloodTransfusion</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.BloodTransfusionController.PostBloodTransfusion(DTO.App.V1.BloodTransfusion)">
+            <summary>
+            Insert new bloodTransfusion
+            </summary>
+            <param name="bloodTransfusion">New bloodTransfusions</param>
+            <returns>BloodTransfusions</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ContactsController.GetContact">
+            <summary>
+             Get all contacts
+            </summary>
+            <returns>All Contacts</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ContactsController.GetContact(System.Guid)">
+            <summary>
+            Get contact by id
+            </summary>
+            <param name="id">Contact id</param>
+            <returns>Contact</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ContactsController.GetContactByPerson(System.Guid)">
+            <summary>
+            Get contact by specific person id
+            </summary>
+            <param name="id">Person id</param>
+            <returns>All person contacts</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ContactsController.PutContact(System.Guid,DTO.App.V1.Contact)">
+            <summary>
+            Update specific contact
+            </summary>
+            <param name="id">Contact id</param>
+            <param name="contact">New contact</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ContactsController.PostContact(DTO.App.V1.Contact)">
+            <summary>
+            Insert new contact
+            </summary>
+            <param name="contact">New Contact</param>
+            <returns>Contact</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ContactsController.DeleteContact(System.Guid)">
+            <summary>
+            Delete specific contact
+            </summary>
+            <param name="id">Contact id</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ContactTypesController.GetContactType">
+            <summary>
+            Get all contactTypes
+            </summary>
+            <returns>List of contactTypes</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ContactTypesController.GetContactType(System.Guid)">
+            <summary>
+            Get contactType by id
+            </summary>
+            <param name="id">ContactType id</param>
+            <returns>ContactType</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ContactTypesController.PutContactType(System.Guid,DTO.App.V1.ContactType)">
+            <summary>
+            Update specific contactType
+            </summary>
+            <param name="id">ContactType id</param>
+            <param name="contactType">ContactType</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ContactTypesController.PostContactType(DTO.App.V1.ContactType)">
+            <summary>
+            Insert new contactType
+            </summary>
+            <param name="contactType">New contactType</param>
+            <returns>ContactType</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ContactTypesController.DeleteContactType(System.Guid)">
+            <summary>
+            Delete contactType by id
+            </summary>
+            <param name="id">ContactType id</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.Identity.AccountController.GetAppUserInfo">
+            <summary>
+            Get app user info
+            </summary>
+            <returns>DTO.App.V1.AppUser</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.Identity.AccountController.Login(DTO.App.V1.Login)">
+            <summary>
+            Login into account
+            </summary>
+            <param name="dto">Login DTO</param>
+            <returns>DTO.App.V1.JwtResponse</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.Identity.AccountController.Register(DTO.App.V1.Register)">
+            <summary>
+            Register account
+            </summary>
+            <param name="dto">Register DTO</param>
+            <returns>DTO.App.V1.JwtResponse</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.PersonsController.GetPersons">
+            <summary>
+            Get all Persons
+            </summary>
+            <returns>DTO.App.V1.Person</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.PersonsController.GetPersons(System.String,System.String,System.String)">
+            <summary>
+            Get all Persons considering parameters. Included person type and blood group.
+            </summary>
+            <param name="firstname">Person firstname</param>
+            <param name="lastname">Person lastname</param>
+            <param name="identificationcode">Personal ID</param>
+            <returns>DTO.App.V1.Person</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.PersonsController.GetPersons(System.String)">
+            <summary>
+            Get all person by person type
+            </summary>
+            <param name="personType">Person type</param>
+            <returns>Person</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.PersonsController.GetPerson(System.Guid)">
+            <summary>
+            Get person by id
+            </summary>
+            <param name="id">Person id</param>
+            <returns>DTO.App.V1.Person</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.PersonsController.GetPersonBloodDonateInfo(System.Guid)">
+            <summary>
+            Get person bloodDonate info by person id
+            </summary>
+            <param name="personId">Person id</param>
+            <returns>DTO.App.V1.Person</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.PersonsController.PostPerson(DTO.App.V1.Person)">
+            <summary>
+            Insert new person
+            </summary>
+            <param name="person">New person</param>
+            <returns>Person</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.PersonTypeController.GetPersonType">
+            <summary>
+            Get all personTypes
+            </summary>
+            <returns>List of personTypes</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.PersonTypeController.GetPersonType(System.Guid)">
+            <summary>
+            Get personType by id
+            </summary>
+            <param name="id">PersonType id</param>
+            <returns>PersonType</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.PersonTypeController.PutPersonType(System.Guid,DTO.App.V1.PersonType)">
+            <summary>
+            Update specific personType
+            </summary>
+            <param name="id">PersonType id</param>
+            <param name="personType">New personType</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.PersonTypeController.PostPersonType(DTO.App.V1.PersonType)">
+            <summary>
+            Insert new personType
+            </summary>
+            <param name="personType">New personType</param>
+            <returns>PersonType</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.PersonTypeController.DeletePersonType(System.Guid)">
+            <summary>
+            Delete personType by id
+            </summary>
+            <param name="id">PersonType Id</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.StatisticsController.GetBloodTransfusionStatistics">
+            <summary>
+            Get bloodTransfusion statistics
+            </summary>
+            <returns>BloodTransfusion statistics</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.StatisticsController.GetBloodDonateStatistics">
+            <summary>
+            Get bloodDonate statistics
+            </summary>
+            <returns>BloodDonate statistics</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.StatisticsController.GetGeneralStatistics">
+            <summary>
+            Get general statistics
+            </summary>
+            <returns>General statistics</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TransferableBloodController.GetTransferableBlood">
+            <summary>
+            Get all transferableBloods
+            </summary>
+            <returns>List of transferableBloods</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TransferableBloodController.GetTransferableBlood(System.Guid)">
+            <summary>
+            Get transferableBlood by id
+            </summary>
+            <param name="id">TransferableBlood id</param>
+            <returns>TransferableBlood</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TransferableBloodController.GetAllTransferableBloodByBloodTransfusionId(System.Guid)">
+            <summary>
+            Get all transferableBlood by bloodTransfusion id
+            </summary>
+            <param name="bloodTransfusionId">TransferableBlood id</param>
+            <returns>TransferableBlood</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TransferableBloodController.PutTransferableBlood(System.Guid,DTO.App.V1.TransferableBlood)">
+            <summary>
+            Update specific transferableBlood
+            </summary>
+            <param name="id">TransferableBlood id</param>
+            <param name="transferableBlood">New transferableBlood</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TransferableBloodController.PostTransferableBlood(DTO.App.V1.TransferableBlood)">
+            <summary>
+            Insert new transferableBlood
+            </summary>
+            <param name="transferableBlood">New transferableBlood</param>
+            <returns>TransferableBlood</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TransferableBloodController.DeleteTransferableBlood(System.Guid)">
+            <summary>
+            Delete transferableBlood by id
+            </summary>
+            <param name="id">TransferableBlood id</param>
+            <returns>No content</returns>
+        </member>
+    </members>
+</doc>

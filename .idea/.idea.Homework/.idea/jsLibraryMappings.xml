@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/Directory.Build.props" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ApiControllers/ContactTypesController.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ApiControllers/ContactsController.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ApiControllers/Identity/AccountController.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ApiControllers/PersonsController.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ConfigureSwaggerOptions.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Controllers/BloodDonateController.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Controllers/BloodTestController.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Controllers/HomeController.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Controllers/PersonsController.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Controllers/StatisticsController.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Models/ErrorViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Program.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Properties/launchSettings.json" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ScaffoldingReadMe.txt" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Startup.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ViewModels/BloodDonate/CreateViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ViewModels/BloodDonate/DetailsViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ViewModels/BloodDonate/IndexViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ViewModels/BloodTest/CreateViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ViewModels/BloodTest/DetailsViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ViewModels/BloodTest/IndexViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ViewModels/Home/HomeViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ViewModels/Statistics/StatisticsViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ViewModels/person/CreateViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ViewModels/person/DetailsViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/ViewModels/person/IndexViewModel.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/BloodDonate/Create.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/BloodDonate/Details.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/BloodDonate/Index.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/BloodTest/Create.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/BloodTest/Details.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/BloodTest/Index.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/Home/Index.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/Home/Privacy.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/Persons/Create.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/Persons/Details.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/Persons/Index.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/Shared/Error.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/Shared/_LanguageSelection.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/Shared/_Layout.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/Shared/_LayoutLogin.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/Shared/_LoginPartial.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/Statistics/General.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/_ViewImports.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/Views/_ViewStart.cshtml" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/WebApp.csproj" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/appsettings.Development.json" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/appsettings.json" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/obj/Debug/net5.0/WebApp.AssemblyInfo.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/obj/Debug/net5.0/WebApp.RazorAssemblyInfo.cs" libraries="{jquery-latest, loader}" />
+    <file url="file://$PROJECT_DIR$/WebApp/wwwroot/favicon.ico" libraries="{jquery-latest, loader}" />
+  </component>
+</project>

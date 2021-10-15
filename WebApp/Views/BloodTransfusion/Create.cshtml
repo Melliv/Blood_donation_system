@@ -1,0 +1,56 @@
+@model WebApp.ViewModels.BloodTransfusion.CreateViewModel;
+
+<h1>@Resources.Views.Shared._Layout.Create</h1>
+
+<h4>@Resources.DTO.App.V1.Overall.BloodTransfusion</h4>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="All" class="text-danger">
+                @if (@Model.Error == 1)
+                {
+                    @:@Resources.DTO.App.V1.BloodTransfusion.NotEnoughtBlood!
+                }
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodTransfusions.Amount" class="control-label"></label>
+                <input asp-for="BloodTransfusions.Amount" class="form-control" />
+                <span asp-validation-for="BloodTransfusions.Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodTransfusions.DonorId" class="control-label"></label>
+                <select asp-for="BloodTransfusions.DonorId" class="form-control" asp-items="Model.Patients">
+                    <option></option>
+                </select>
+                <span asp-validation-for="BloodTransfusions.DonorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodTransfusions.DoctorId" class="control-label"></label>
+                <select asp-for="BloodTransfusions.DoctorId" class="form-control" asp-items="Model.Doctors">
+                    <option></option>
+                </select>
+                <span asp-validation-for="BloodTransfusions.DoctorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodTransfusions.BloodGroupId" class="control-label"></label>
+                <select asp-for="BloodTransfusions.BloodGroupId" class="form-control" asp-items="Model.BloodGroups">
+                    <option></option>
+                </select>
+                <span asp-validation-for="BloodTransfusions.BloodGroupId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodTransfusions.Comments" class="control-label"></label>
+                <textarea asp-for="BloodTransfusions.Comments" class="form-control" rows="5"></textarea>
+                <span asp-validation-for="BloodTransfusions.Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="@Resources.Views.Shared._Layout.Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">@Resources.Views.Shared._Layout.BacktoList</a>
+</div>

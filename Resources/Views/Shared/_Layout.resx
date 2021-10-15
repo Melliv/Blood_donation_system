@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Languages" xml:space="preserve">
+        <value>Languages</value>
+    </data>
+    <data name="Logout" xml:space="preserve">
+        <value>Logout</value>
+    </data>
+    <data name="Hello" xml:space="preserve">
+        <value>Hello</value>
+    </data>
+    <data name="Search" xml:space="preserve">
+        <value>Search</value>
+    </data>
+    <data name="Create" xml:space="preserve">
+        <value>Create</value>
+    </data>
+    <data name="Profile" xml:space="preserve">
+        <value>Profile</value>
+    </data>
+    <data name="BloodDonating" xml:space="preserve">
+        <value>Blood donating</value>
+    </data>
+    <data name="BloodCenter" xml:space="preserve">
+        <value>Bloodcenter</value>
+    </data>
+    <data name="General" xml:space="preserve">
+        <value>General</value>
+    </data>
+    <data name="BloodBank" xml:space="preserve">
+        <value>Blood bank</value>
+    </data>
+    <data name="Persons" xml:space="preserve">
+        <value>Persons</value>
+    </data>
+    <data name="Activities" xml:space="preserve">
+        <value>Activities</value>
+    </data>
+    <data name="BloodTesting" xml:space="preserve">
+        <value>Blood testing</value>
+    </data>
+    <data name="Donations" xml:space="preserve">
+        <value>Donations</value>
+    </data>
+    <data name="BloodTransfusions" xml:space="preserve">
+        <value>Blood transfusions</value>
+    </data>
+    <data name="Tests" xml:space="preserve">
+        <value>Tests</value>
+    </data>
+    <data name="Register" xml:space="preserve">
+        <value>Register</value>
+    </data>
+    <data name="BloodDonation" xml:space="preserve">
+        <value>Blood donation</value>
+    </data>
+    <data name="BloodTransfusion" xml:space="preserve">
+        <value>Blood transfusion</value>
+    </data>
+    <data name="BacktoList" xml:space="preserve">
+        <value>Back to list</value>
+    </data>
+    <data name="Privacy" xml:space="preserve">
+        <value>Privacy</value>
+    </data>
+    <data name="Details" xml:space="preserve">
+        <value>Details</value>
+    </data>
+    <data name="Edit" xml:space="preserve">
+        <value>Edit</value>
+    </data>
+    <data name="Delete" xml:space="preserve">
+        <value>Delete</value>
+    </data>
+    <data name="New" xml:space="preserve">
+        <value>New</value>
+    </data>
+    <data name="Index" xml:space="preserve">
+        <value>List</value>
+    </data>
+    <data name="DeleteConfirm" xml:space="preserve">
+        <value>Are you sure you want to delete this</value>
+    </data>
+    <data name="Home" xml:space="preserve">
+        <value>Home</value>
+    </data>
+    <data name="Statistics" xml:space="preserve">
+        <value>Statistics</value>
+    </data>
+    <data name="BloodTests" xml:space="preserve">
+        <value>Blood tests</value>
+    </data>
+    <data name="BloodDonations" xml:space="preserve">
+        <value>Blood donations</value>
+    </data>
+    <data name="Blood" xml:space="preserve">
+        <value>Blood</value>
+    </data>
+</root>

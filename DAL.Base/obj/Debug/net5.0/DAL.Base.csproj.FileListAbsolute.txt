@@ -1,0 +1,17 @@
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\bin\Debug\net5.0\DAL.Base.deps.json
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\bin\Debug\net5.0\DAL.Base.dll
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\bin\Debug\net5.0\ref\DAL.Base.dll
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\bin\Debug\net5.0\DAL.Base.pdb
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\bin\Debug\net5.0\Contracts.DAL.Base.dll
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\bin\Debug\net5.0\Contracts.Domain.Base.dll
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\bin\Debug\net5.0\Contracts.DAL.Base.pdb
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\bin\Debug\net5.0\Contracts.Domain.Base.pdb
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\obj\Debug\net5.0\DAL.Base.csprojAssemblyReference.cache
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\obj\Debug\net5.0\DAL.Base.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\obj\Debug\net5.0\DAL.Base.AssemblyInfoInputs.cache
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\obj\Debug\net5.0\DAL.Base.AssemblyInfo.cs
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\obj\Debug\net5.0\DAL.Base.csproj.CoreCompileInputs.cache
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\obj\Debug\net5.0\DAL.Base.csproj.CopyComplete
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\obj\Debug\net5.0\DAL.Base.dll
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\obj\Debug\net5.0\ref\DAL.Base.dll
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DAL.Base\obj\Debug\net5.0\DAL.Base.pdb

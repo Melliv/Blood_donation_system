@@ -1,0 +1,75 @@
+@model WebApp.ViewModels.BloodDonate.DetailsViewModel;
+
+<h1>@Resources.Views.Shared._Layout.Details</h1>
+
+<div>
+    <h4>@Resources.DTO.App.V1.Overall.BloodDonate</h4>
+    <hr/>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodDonate.BloodGroup!.BloodGroupValue)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BloodDonate.BloodGroup!.BloodGroupValue)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodDonate.Amount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BloodDonate.Amount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodDonate.Available)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BloodDonate.Available)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodDonate.Donor)
+        </dt>
+        <dd class="col-sm-10">
+            <a asp-area="" asp-controller="Persons" asp-route-id="@Model.BloodDonate.DonorId" >
+                @Html.DisplayFor(model => model.BloodDonate.Donor!.FullName) 
+            </a>
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodDonate.Doctor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BloodDonate.Doctor!.FullName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodDonate.ExpireDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BloodDonate.ExpireDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodDonate.CreatedBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BloodDonate.CreatedBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodDonate.CreateAt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BloodDonate.CreateAt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodDonate.UpdateBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BloodDonate.UpdateBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodDonate.UpdatedAt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BloodDonate.UpdatedAt)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">@Resources.Views.Shared._Layout.BacktoList</a>
+</div>

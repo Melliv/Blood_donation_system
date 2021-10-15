@@ -1,0 +1,53 @@
+@model WebApp.ViewModels.person.CreateViewModel
+<h1>@Resources.Views.Shared._Layout.Create</h1>
+
+<h4>@Resources.DTO.App.V1.Overall.Person</h4>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" id="create-person">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Person.Firstname" class="control-label"></label>
+                <input asp-for="Person.Firstname" class="form-control"/>
+                <span asp-validation-for="Person.Firstname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Person.Lastname" class="control-label"></label>
+                <input asp-for="Person.Lastname" class="form-control"/>
+                <span asp-validation-for="Person.Lastname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Person.IdentificationCode" class="control-label"></label>
+                <input asp-for="Person.IdentificationCode" class="form-control"/>
+                <span asp-validation-for="Person.IdentificationCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Person.Comments" class="control-label"></label>
+                <textarea asp-for="Person.Comments" class="form-control" rows="5"></textarea>
+                <span asp-validation-for="Person.Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Person.PersonTypeId" class="control-label"></label>
+                <select asp-for="Person.PersonTypeId" class="form-control" asp-items="Model.PersonTypes" id="personTypes">
+                    <option></option>
+                </select>
+                <span asp-validation-for="Person.PersonTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Person.BloodGroupId" class="control-label"></label>
+                <select asp-for="Person.BloodGroupId" class="form-control" asp-items="Model.BloodGroups">
+                    <option></option>
+                </select>
+                <span asp-validation-for="Person.BloodGroupId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="@Resources.Views.Shared._Layout.Create" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">@Resources.Views.Shared._Layout.BacktoList</a>
+</div>

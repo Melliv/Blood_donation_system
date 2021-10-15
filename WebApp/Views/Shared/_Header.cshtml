@@ -1,0 +1,57 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Domain.App.Identity
+@inject SignInManager<AppUser> _signInManager
+@inject UserManager<AppUser> _userManager
+
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse collapse d-flex justify-content-end">
+    <ul class="navbar-nav float-right">
+        <!---
+        if ((User.Identity?.IsAuthenticated ?? false) && User.IsInRole("Admin"))
+        --->
+        <partial name="_LanguageSelection"/>
+        
+        @if (User.IsInRole("Admin"))
+        {
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Admin panel
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="BloodDonateAdmin" asp-action="Index">Blood Donate</a>
+                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="BloodGroupAdmin" asp-action="Index">Blood Group</a>
+                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="BloodTestAdmin" asp-action="Index">Blood Test</a>
+                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="BloodTransfusionAdmin" asp-action="Index">Blood Transfusion</a>
+                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="ContactAdmin" asp-action="Index">Contact Type</a>
+                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="ContactTypeAdmin" asp-action="Index">Contact Type</a>
+                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="PersonAdmin" asp-action="Index">Person</a>
+                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="PersonTypeAdmin" asp-action="Index">Person Type</a>
+                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="TransferableBloodAdmin" asp-action="Index">Transferable Blood</a>
+                </div>
+            </li>
+        }
+
+        @if (_signInManager.IsSignedIn(User))
+            {
+                var user = await _userManager.GetUserAsync(User);
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                       @Resources.Views.Shared._Layout.Hello! @User!.Identity!.Name! (@user.FirstName @user.LastName)
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new {area = ""})">
+                        <button type="submit" class="nav-link btn btn-link text-dark">
+                            @Resources.Views.Shared._Layout.Logout
+                        </button>
+                    </form>
+                </li>
+            }
+    </ul>
+</div>
+

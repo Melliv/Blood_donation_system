@@ -1,0 +1,54 @@
+@model WebApp.ViewModels.Contact.IndexViewModel;
+
+<h1>@Resources.Views.Shared._Layout.Index</h1>
+
+<p>
+    <a asp-action="Create" asp-route-PersonId="@Model.PersonId">
+        @Resources.Views.Shared._Layout.Create @Resources.Views.Shared._Layout.New
+    </a>
+</p>
+
+<p>
+
+    <a asp-area="" asp-controller="Persons" asp-action="Details" asp-route-id="@Model.PersonId">
+        Person profile
+    </a>
+
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Contacts!.FirstOrDefault()!.ContactValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contacts!.FirstOrDefault()!.ContactType!.ContactTypeValue)
+            </th>
+            <th>
+                @Resources.DTO.App.V1.Overall.Person
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Contacts!) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactType!.ContactTypeValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Person!.FullName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">@Resources.Views.Shared._Layout.Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">@Resources.Views.Shared._Layout.Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" >@Resources.Views.Shared._Layout.Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

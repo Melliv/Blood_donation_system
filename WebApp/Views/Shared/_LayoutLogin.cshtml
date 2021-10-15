@@ -1,0 +1,179 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Domain.App.Identity
+@using System.Threading
+@inject SignInManager<AppUser> _signInManager
+@inject UserManager<AppUser> _userManager
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bloody</title>
+    
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="~/js/sb-admin-2.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/js/site.css" asp-append-version="true">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+<div class="container">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+        <div class="col-xl-10 col-lg-12 col-md-9">
+
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                    
+                    <partial name="_LanguageSelection"/>
+                    
+                    <div class="container">
+                        @if (_signInManager.IsSignedIn(User))
+                        {
+                            <a type="button" class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Index">@Resources.Views.Shared._Layout.Home</a>
+                        }
+                    </div>
+                    
+                    <div class="container m-auto">
+                        <main role="main" class="pb-3">
+                            @RenderBody()
+                        </main>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/jquery.validate.globalize.js" asp-append-version="true" ></script>
+
+@await RenderSectionAsync("Scripts", required: false)
+
+@{    
+	var currentCultureCode = Thread.CurrentThread.CurrentCulture.Name.Split('-')[0];
+
+    // map .net datetime format strings to flatpickr/momentjs format
+    
+    // https://flatpickr.js.org/formatting/
+    // d - day of month,2 digits
+    // j - day of month, no leading zero
+    // m - month, 2 digits
+    // n - mont, no leading zero
+    // y - 2 digit year, Y - 4 digit year
+    
+    // https://docs.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo?view=netcore-3.1
+    // dd.MM.yyyy or dd/MM/yyyy
+    
+    var datePattern = Thread.CurrentThread.CurrentUICulture.DateTimeFormat.ShortDatePattern;
+    datePattern = datePattern
+        .Replace("dd", "d")
+        .Replace("MM", "m")
+        .Replace("yyyy", "Y");
+
+    // LongTimePattern and ShortTimePattern HH:mm for 23:59,  h:mm tt for 11:59 PM
+    var timePattern = Thread.CurrentThread.CurrentUICulture.DateTimeFormat.ShortTimePattern;
+    var clock24H = timePattern.Contains("tt") == false;
+    timePattern = timePattern
+        .Replace("HH", "H")
+        .Replace("mm", "i")
+        .Replace("ss", "S")
+        .Replace("tt", "K");
+    var dateTimePattern = timePattern + " " + datePattern;
+}
+
+<script>
+    // https://github.com/globalizejs/globalize#installation
+    $.when(
+        $.get("/js/cldr-core/supplemental/likelySubtags.json", null, null, "json"),
+        $.get("/js/cldr-core/supplemental/numberingSystems.json", null, null, "json"),
+        $.get("/js/cldr-core/supplemental/timeData.json", null, null, "json"),
+        $.get("/js/cldr-core/supplemental/weekData.json", null, null, "json"),
+        
+        $.get("/js/cldr-numbers-modern/main/@currentCultureCode/numbers.json", null, null, "json"),
+        $.get("/js/cldr-numbers-modern/main/@currentCultureCode/currencies.json", null, null, "json"),
+        
+        $.get("/js/cldr-dates-modern/main/@currentCultureCode/ca-generic.json", null, null, "json"),
+        $.get("/js/cldr-dates-modern/main/@currentCultureCode/ca-gregorian.json", null, null, "json"),
+        $.get("/js/cldr-dates-modern/main/@currentCultureCode/dateFields.json", null, null, "json"),
+        $.get("/js/cldr-dates-modern/main/@currentCultureCode/timeZoneNames.json", null, null, "json")
+    ).then(function () {
+        return [].slice.apply(arguments, [0]).map(function (result) {
+            Globalize.load(result[0]);
+        });
+    }).then(function () {
+        // Initialise Globalize to the current culture
+        Globalize.locale('@currentCultureCode');
+    });
+    
+    $(function () {
+        $('[type="datetime-local"]').each(function (index, value) {
+            $(value).attr('type', 'text');
+            $(value).val(value.defaultValue);
+		    $(value).flatpickr({
+		        locale: "@currentCultureCode",
+		        enableTime: true,
+	    	    altFormat: "@dateTimePattern",
+	    	    altInput: true,
+	    	    // dateFormat: "Z", // iso format (causes -3h during summer)
+	    	    // use direct conversion, let backend deal with utc/whatever conversions
+	    	    dateFormat: "Y-m-d H:i:s",
+	    	    disableMobile: true,
+	    	    time_24hr: @(clock24H.ToString().ToLower()),
+		    });
+        });
+
+        $('[type="time"]').each(function (index, value) {
+            $(value).attr('type', 'text');
+            $(value).val(value.defaultValue);
+		    $(value).flatpickr({
+	    	    locale: "@currentCultureCode",
+	    	    enableTime: true,
+	    	    noCalendar: true,
+
+	    	    altFormat: "@timePattern",
+	    	    altInput: true,
+	    	    dateFormat: "H:i", // 24h HH:mm
+	    	    disableMobile: true,
+
+	    	    time_24hr: @(clock24H.ToString().ToLower()),
+		    });
+        });
+
+        $('[type="date"]').each(function (index, value) {
+		    $(value).attr('type', 'text');
+		    $(value).val(value.defaultValue);
+		    $(value).flatpickr({
+    		    locale: "@currentCultureCode",
+	    	    altFormat: "@datePattern",
+	    	    altInput: true,
+                disableMobile: true,
+	    	    dateFormat: "Y-m-d", // YYYY-MM-DD
+		    });
+        });
+    });
+</script>
+
+
+</html>

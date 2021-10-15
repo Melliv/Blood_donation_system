@@ -1,0 +1,64 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ASignInManager_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2020_002E3_003Fresharper_002Dhost_003FSourcesCache_003F1A6092E5_002DED2B_002D4D2A_002D9232_002DCD9B650E85C3_003FF_003FSignInManager_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\ville\.nuget\packages\automapper\10.1.1\lib\netstandard2.0\AutoMapper.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\ville\.nuget\packages\google.datatable.net.wrapper\4.1.0\lib\net5.0\Google.DataTable.Net.Wrapper.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2252102b_002D66cb_002D427b_002Db3f6_002Da48838cb6575/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=299645b0_002Df22e_002D49b3_002D812f_002D6e7526fad9ad/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FIdentityErrorDescriber_002FLocalizedIdentityErrorDescriber/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FAccessDenied/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FConfirmEmail/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FConfirmEmailChange/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FExternalLogin/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FForgotPassword/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FForgotPasswordConfirmation/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FLockout/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FLogin/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FLoginWith2fa/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FLoginWithRecoveryCode/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FLogout/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002F_005FLayout/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002F_005FManageNav/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FChangePassword/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FDeletePersonalData/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FDisable2fa/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FDownloadPersonalData/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FEmail/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FEnableAuthenticator/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FExternalLogins/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FGenerateRecoveryCodes/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FIndex/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FPersonalData/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FResetAuthenticator/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FSetPassword/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FShowRecoveryCodes/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FManage_002FTwoFactorAuthentication/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FRegister/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FRegisterConfirmation/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FResendEmailConfirmation/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FResetPassword/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FPages_002FAccount_002FResetPasswordConfirmation/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FAreas_002FIdentity_002FShared_002FPasswordRequirementsTooltip/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FBase_002EDomain_002FIdentity_002FBaseUser/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FCommon/@EntryIndexedValue">False</s:Boolean>
+	
+	
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FDTO_002EApp_002EV1_002FBloodDonate/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FDTO_002EApp_002EV1_002FBloodGroup/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FDTO_002EApp_002EV1_002FBloodTest/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FDTO_002EApp_002EV1_002FBloodTransfusion/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FDTO_002EApp_002EV1_002FContact/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FDTO_002EApp_002EV1_002FContactType/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FDTO_002EApp_002EV1_002FOverall/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FDTO_002EApp_002EV1_002FPerson/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FDTO_002EApp_002EV1_002FPersonBloodDonateInfo/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FDTO_002EApp_002EV1_002FPersonType/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FDTO_002EApp_002EV1_002FTransferableBlood/@EntryIndexedValue">False</s:Boolean>
+	
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FResources_002FViews_002FShared_002F_005FLayout/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>

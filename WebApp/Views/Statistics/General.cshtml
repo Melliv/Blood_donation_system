@@ -1,0 +1,34 @@
+@model WebApp.ViewModels.Statistics.StatisticsViewModel;
+
+<div id="chart"></div>
+
+<!--1. Load the Google charts-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<!--2. Declare the div-->
+<div id="chart_div" style="width: 800px; height: 500px;"></div>
+
+<!--3. Chart displaying -->
+<script type="text/javascript">
+    // Load the Visualization API and the piechart package.
+    google.charts.load('visualization', '1', { 'packages': ['corechart'] });
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+        var jsonData = '@Html.Raw(@Model.Data)';
+        // Create our data table out of JSON data loaded from server.
+        var data = new google.visualization.DataTable(jsonData);
+        var options = {
+            title: 'Activities',
+            titleTextStyle: {
+                fontSize: 24,
+            },
+            hAxis: { title: 'Date', titleTextStyle: { color: '#333' } },
+            vAxis: { title: 'Amount (ml)', minValue: 0 },
+            backgroundColor: '#f8f9fc'
+        };
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+    }
+</script>

@@ -1,0 +1,12 @@
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\bin\Debug\net5.0\DTO.App.deps.json
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\bin\Debug\net5.0\DTO.App.dll
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\bin\Debug\net5.0\ref\DTO.App.dll
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\bin\Debug\net5.0\DTO.App.pdb
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\obj\Debug\net5.0\DTO.App.csprojAssemblyReference.cache
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\obj\Debug\net5.0\DTO.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\obj\Debug\net5.0\DTO.App.AssemblyInfoInputs.cache
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\obj\Debug\net5.0\DTO.App.AssemblyInfo.cs
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\obj\Debug\net5.0\DTO.App.csproj.CoreCompileInputs.cache
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\obj\Debug\net5.0\DTO.App.dll
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\obj\Debug\net5.0\ref\DTO.App.dll
+C:\Users\ville\RiderProjects\icd0009-2020s\Homework\DTO.App\obj\Debug\net5.0\DTO.App.pdb

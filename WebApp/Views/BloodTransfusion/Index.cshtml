@@ -1,0 +1,56 @@
+@model WebApp.ViewModels.BloodTransfusion.IndexViewModel;
+
+<h1>@Resources.Views.Shared._Layout.Index</h1>
+
+<p>
+    <a asp-action="Create">
+        @Resources.Views.Shared._Layout.Create
+        @Resources.Views.Shared._Layout.New
+    </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodTransfusions.FirstOrDefault()!.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodTransfusions.FirstOrDefault()!.BloodGroup!.BloodGroupValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodTransfusions.FirstOrDefault()!.Donor!)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodTransfusions.FirstOrDefault()!.Doctor!)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodTransfusions.FirstOrDefault()!.CreateAt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.BloodTransfusions) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item!.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item!.BloodGroup!.BloodGroupValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item!.Donor!.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item!.Doctor!.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item!.CreateAt)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item!.Id">@Resources.Views.Shared._Layout.Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

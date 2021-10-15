@@ -1,0 +1,134 @@
+@model WebApp.ViewModels.person.DetailsViewModel
+
+<h1>@Resources.Views.Shared._Layout.Details</h1>
+
+<div>
+    <h4>@Resources.DTO.App.V1.Overall.Person</h4>
+    <hr/>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => Model.Person.Firstname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => Model.Person.Firstname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => Model.Person.Lastname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => Model.Person.Lastname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => Model.Person.IdentificationCode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => Model.Person.IdentificationCode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => Model.Person.PersonType!.PersonTypeValue)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => Model.Person.PersonType!.PersonTypeValue)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => Model.Person.BloodGroup!.BloodGroupValue)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => Model.Person.BloodGroup!.BloodGroupValue)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => Model.Person.Comments)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => Model.Person.Comments)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => Model.Person.CreatedBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => Model.Person.CreatedBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => Model.Person.CreateAt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => Model.Person.CreateAt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => Model.Person.UpdateBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => Model.Person.UpdateBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => Model.Person.UpdatedAt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => Model.Person.UpdatedAt)
+        </dd>
+        <dt class="col-sm-2">
+            @Resources.DTO.App.V1.Person.BloodDonateInfoDate
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => Model.PersonBloodDonateInfo!.Date)
+        </dd>
+        <dt class="col-sm-2">
+            @Resources.DTO.App.V1.Person.BloodDonateInfoAllowed
+        </dt>
+        <dd class="col-sm-10">
+            @if (Model.PersonBloodDonateInfo!.Allowed!)
+            {
+                @:✔
+                
+            }
+            else
+            {
+                @:❌
+            }
+        </dd>
+        <dt class="col-sm-2 m-1">
+            <a class="btn btn-primary" asp-controller="Contact" asp-action="Index" asp-route-personId="@Model.Person.Id">
+                @Resources.DTO.App.V1.Overall.Person @Resources.DTO.App.V1.Overall.Contacts
+            </a>
+        </dt>
+
+        <div class="btn-group col-sm-2 m-1">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                @Resources.Views.Shared._Layout.Create
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" asp-controller="BloodTest" asp-action="Create" asp-route-personId="@Model.Person.Id" asp-route-bloodGroupId="@Model.Person.BloodGroupId">
+                    @Resources.DTO.App.V1.Overall.BloodTest
+                </a>
+                <a class="dropdown-item" asp-controller="BloodDonate" asp-action="Create" asp-route-personId="@Model.Person.Id">
+                    @Resources.DTO.App.V1.Overall.BloodDonate
+                </a>
+                <a class="dropdown-item" asp-controller="BloodTransfusion" asp-action="Create" asp-route-personId="@Model.Person.Id" asp-route-bloodGroupId="@Model.Person.BloodGroupId">
+                    @Resources.DTO.App.V1.Overall.BloodTransfusion
+                </a>
+            </div>
+        </div>
+
+        <div class="btn-group col-sm-2 m-1">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                @Resources.Views.Shared._Layout.Index
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" asp-controller="BloodTest" asp-action="Index" asp-route-personId="@Model.Person.Id">
+                    @Resources.DTO.App.V1.Overall.BloodTest
+                </a>
+                <a class="dropdown-item" asp-controller="BloodDonate" asp-action="Index" asp-route-personId="@Model.Person.Id">
+                    @Resources.DTO.App.V1.Overall.BloodDonate
+                </a>
+                <a class="dropdown-item" asp-controller="BloodTransfusion" asp-action="Index" asp-route-personId="@Model.Person.Id">
+                    @Resources.DTO.App.V1.Overall.BloodTransfusion
+                </a>
+            </div>
+        </div>
+
+        <div class="col-sm-2 m-1">
+            <a asp-action="Index" class="row">@Resources.Views.Shared._Layout.BacktoList</a>
+        </div>
+
+    </dl>
+</div>

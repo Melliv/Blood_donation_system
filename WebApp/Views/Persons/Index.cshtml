@@ -1,0 +1,81 @@
+﻿@model WebApp.ViewModels.person.IndexViewModel
+
+<div class="container mt-2">
+
+    <div class="small-middle-container">
+        <form asp-action="Index" method="get" id="search-form">
+            <h3>@Resources.Views.Shared._Layout.Search @Resources.DTO.App.V1.Overall.Person</h3>
+
+            <div class="col">@Resources.DTO.App.V1.Person.Firstname</div>
+            <div class="col">
+                <input asp-for="Person.Firstname" name="firstName" class="form-control mb-2 mr-sm-2"/>
+            </div>
+
+            <div class="col">@Resources.DTO.App.V1.Person.Lastname</div>
+            <div class="col">
+                <input asp-for="Person.Lastname" name="lastName" class="form-control mb-2 mr-sm-2"/>
+            </div>
+
+            <div class="col">@Resources.DTO.App.V1.Person.IdentificationCode</div>
+            <div class="col">
+                <input asp-for="Person.IdentificationCode" name="identificationCode" class="form-control mb-2 mr-sm-2"/>
+            </div>
+
+            <div class="col">
+                <input type="submit" value="@Resources.Views.Shared._Layout.Search" class="btn btn-primary mb-2 my-1 mx-2 d-inline" />
+                <a asp-action="Create" id="create-person" >
+                    @Resources.Views.Shared._Layout.Create @Resources.Views.Shared._Layout.New
+                </a>
+            </div>
+        </form>
+
+    </div>
+
+    @if (Model.Persons.Count() != 0)
+    {
+        <table class="table">
+            <thead>
+            <tr>
+                <th>
+                    @Resources.Views.Shared._Layout.Profile
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Person.Firstname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Person.Lastname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Person.IdentificationCode)
+                </th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var person in Model.Persons)
+            {
+                <tr class="searched-person">
+                    <td>
+                        <a asp-action="Details" asp-route-id="@person!.Id">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-droplet-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6zM6.646 4.646c-.376.377-1.272 1.489-2.093 3.13l.894.448c.78-1.559 1.616-2.58 1.907-2.87l-.708-.708z"/>
+                            </svg>
+                        </a>
+                    </td>
+                    <td>
+                        @person!.Firstname
+                    </td>
+                    <td>
+                        @person!.Lastname
+                    </td>
+                    <td>
+                        @person!.IdentificationCode
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+
+
+</div>

@@ -1,0 +1,56 @@
+@model WebApp.ViewModels.Contact.DetailsViewModel;
+
+<h1>@Resources.Views.Shared._Layout.Details</h1>
+
+<div>
+    <h4>@Resources.DTO.App.V1.Overall.Contact</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Contact.ContactValue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Contact.ContactValue)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Contact.ContactType!.ContactTypeValue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model =>  model.Contact.ContactType!.ContactTypeValue)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model =>  model.Contact.Person!.FullName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model =>  model.Contact.Person!.FullName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Contact.CreatedBy)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Contact.CreatedBy)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Contact.CreateAt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Contact.CreateAt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Contact.UpdateBy)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Contact.UpdateBy)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Contact.UpdatedAt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Contact.UpdatedAt)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Contact.Id">@Resources.Views.Shared._Layout.Edit</a> |
+    <a asp-action="Index" asp-route-personId="@Model.Contact.PersonId" >@Resources.Views.Shared._Layout.BacktoList</a>
+</div>

@@ -1,0 +1,44 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="DonorId" xml:space="preserve">
+        <value>Doonor</value>
+    </data>
+    <data name="DoctorId" xml:space="preserve">
+        <value>Doktor</value>
+    </data>
+    <data name="BloodTestId" xml:space="preserve">
+        <value>Vereanalüüs</value>
+    </data>
+    <data name="BloodGroupId" xml:space="preserve">
+        <value>Veregrupp</value>
+    </data>
+    <data name="BloodGroup" xml:space="preserve">
+        <value>Veregrupp</value>
+    </data>
+    <data name="Amount" xml:space="preserve">
+        <value>Kogus</value>
+    </data>
+    <data name="Available" xml:space="preserve">
+        <value>Saadav</value>
+    </data>
+    <data name="ExpireDate" xml:space="preserve">
+        <value>Aegumiskuupäev</value>
+    </data>
+    <data name="Doctor" xml:space="preserve">
+        <value>Doktor</value>
+    </data>
+    <data name="Donor" xml:space="preserve">
+        <value>Doonor</value>
+    </data>
+</root>

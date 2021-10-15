@@ -1,0 +1,54 @@
+@model WebApp.ViewModels.PersonType.CreateViewModel
+
+<h1>Edit</h1>
+
+<h4>PersonType</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PersonType.PersonTypeValue" class="control-label"></label>
+                <input asp-for="PersonType.PersonTypeValue" class="form-control">
+                <span asp-validation-for="PersonType.PersonTypeValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonType.SecondaryPersonTypeValue" class="control-label"></label>
+                <input asp-for="PersonType.SecondaryPersonTypeValue" class="form-control" >
+                <span asp-validation-for="PersonType.SecondaryPersonTypeValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonType.CreatedBy" class="control-label"></label>
+                <input asp-for="PersonType.CreatedBy" class="form-control" />
+                <span asp-validation-for="PersonType.CreatedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonType.CreateAt" class="control-label"></label>
+                <input asp-for="PersonType.CreateAt" class="form-control" />
+                <span asp-validation-for="PersonType.CreateAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonType.UpdateBy" class="control-label"></label>
+                <input asp-for="PersonType.UpdateBy" class="form-control" />
+                <span asp-validation-for="PersonType.UpdateBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonType.UpdatedAt" class="control-label"></label>
+                <input asp-for="PersonType.UpdatedAt" class="form-control" />
+                <span asp-validation-for="PersonType.UpdatedAt" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="PersonType.Id" />
+            <input type="hidden" asp-for="PersonType.PersonTypeValueId" />
+            <input type="hidden" asp-for="PersonType.SecondaryPersonTypeValueId" />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
